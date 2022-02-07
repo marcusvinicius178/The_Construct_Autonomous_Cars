@@ -71,7 +71,7 @@
       type = Terminal
       parent = child5
       order = 1
-      command = echo "In Web Browser type: "Localhost:8888" "; xdg-open https://www.google.com/
+      command = echo -e "Follow the Steps below:\n 1: Run the Scripts indicated by Left Terminals; \n 2: Wait the Terminal above start Apollo Modules; \n 3: Open a Web Browser and type: "Localhost:8888" "; xdg-open https://www.google.com/
       profile = stayopen
       uuid = be13babb-4f32-41bc-be77-3209ce36dbab
 [plugins]
