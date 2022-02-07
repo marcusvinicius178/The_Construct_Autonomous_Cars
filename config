@@ -63,7 +63,7 @@
     [[[terminal6]]]
       type = Terminal
       parent = child5
-      command = cd /apollo/docker/scripts;  bash dev_start.sh; docker exec -it apollo_dev_root bash apollo.sh build_opt_gpu;  docker exec -w /apollo/scripts/ apollo_dev_root bash dreamview.sh start_fe
+      command = cd /apollo/docker/scripts;  bash dev_start.sh; docker exec -w /apollo/scripts/ apollo_dev_root bash dreamview.sh start_fe
       order = 0
       profile = stayopen
       uuid = a9af1377-a749-4943-a5f6-3c85a42eae74
