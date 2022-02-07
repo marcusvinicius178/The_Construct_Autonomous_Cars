@@ -63,7 +63,7 @@
     [[[terminal6]]]
       type = Terminal
       parent = child5
-      command = cd /apollo/docker/scripts;  bash dev_start.sh;  docker exec -w /apollo/scripts/ apollo_dev_root bash dreamview.sh start_fe
+      command = docker exec -w /apollo/scripts/ apollo_dev_root bash dreamview.sh start_fe
       order = 0
       profile = stayopen
       uuid = a9af1377-a749-4943-a5f6-3c85a42eae74
@@ -71,7 +71,7 @@
       type = Terminal
       parent = child5
       order = 1
-      command = echo -e "Follow the Steps below:\n 1: Run the Scripts indicated by Left Terminals; \n 2: Wait the Terminal above start Apollo Modules; \n 3: Open a Web Browser and type: "Localhost:8888" "; xdg-open https://www.google.com/
+      command = echo -e "Follow the Steps below:\n 1: Run the Scripts indicated by Terminals in Left; \n 2: Wait the Terminal above start Apollo Modules; \n 3: Open a Web Browser and type: "localhost:8888" "; xdg-open https://www.google.com/
       profile = stayopen
       uuid = be13babb-4f32-41bc-be77-3209ce36dbab
 [plugins]
