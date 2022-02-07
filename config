@@ -43,14 +43,14 @@
     [[[terminal3]]]
       type = Terminal
       parent = child2
-      command = echo "Inside the container below run the command:  ./run_carla_apollo_bridge.sh"; docker exec -ti carla-apollo bash 
+      command = echo "Inside the container below run the command:  ./run_carla_apollo_bridge.sh"; sudo docker exec --privileged -ti carla-apollo bash 
       order = 0
       profile = stayopen
       uuid = 263bdd91-ab56-4cce-b599-acf111c44657
     [[[terminal4]]]
       type = Terminal
       parent = child2
-      command = echo -e "Inside the container below run the command:  ./run_pygame_simulator.sh \n If the fails in first attemp repeat the command again until the client simulator opens" ; docker exec -ti carla-apollo bash
+      command = echo -e "Inside the container below run the command:  ./run_pygame_simulator.sh \n If the fails in first attemp repeat the command again until the client simulator opens" ; sudo docker exec --privileged -ti carla-apollo bash
       order = 1
       profile = stayopen
       uuid = 28dbfdef-d502-4ba4-92e7-1b78dc3652bd
@@ -63,7 +63,7 @@
     [[[terminal6]]]
       type = Terminal
       parent = child5
-      command = cd /apollo/docker/scripts;  bash dev_start.sh; docker exec -w /apollo/scripts/ apollo_dev_root bash dreamview.sh start_fe
+      command = cd /apollo/docker/scripts;  bash dev_start.sh; sudo docker exec --privileged -w /apollo/scripts/ apollo_dev_root bash dreamview.sh start_fe
       order = 0
       profile = stayopen
       uuid = a9af1377-a749-4943-a5f6-3c85a42eae74
