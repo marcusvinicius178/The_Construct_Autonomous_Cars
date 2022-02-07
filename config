@@ -50,7 +50,7 @@
     [[[terminal4]]]
       type = Terminal
       parent = child2
-      command = echo "Inside the container below run the command:  ./run_pygame_simulator.sh    If the fails in first attemp repeat the command again until the client simulator opens" ; docker exec -ti carla-apollo bash
+      command = echo -e "Inside the container below run the command:  ./run_pygame_simulator.sh    If the fails in first attemp repeat the command again until the client simulator opens" ; docker exec -ti carla-apollo bash
       order = 1
       profile = stayopen
       uuid = 28dbfdef-d502-4ba4-92e7-1b78dc3652bd
